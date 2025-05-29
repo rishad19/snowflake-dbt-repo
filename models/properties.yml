@@ -1,0 +1,18 @@
+sources:
+  - name: "Users_table_source"
+    database: DB_DBT
+    schema: SCH_DBT
+    tables:
+      - name: employees
+
+
+models:
+  - name: Users
+    config:
+      materialized: 'table'
+  - name: Users_Union
+    config:
+      materialized: 'view'
+  - name: Users_union_V2
+    config:
+      materialized: 'view'

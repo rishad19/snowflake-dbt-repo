@@ -1,1 +1,1 @@
-select * from DB_DBT.SCH_DBT.employees
+select * from {{source("Users_table_source","employees")}}
